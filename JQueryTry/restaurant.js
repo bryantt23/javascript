@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    $("div.container").append("<header></header>");
-        $("div.container").append("<h1> great veggie burgers </h1>");
 
-            $("div.container").append('<img src="veggie.jpg" height="64px" width="64px">');
+// https://github.com/Jberczel/odin-javascript/blob/master/restaurant/restaraunt.js
+$("#content").append("<img src='veggie.jpg' alt='veggie'>")
 
-                        $("div.container").append("<p> tasty </p>");
+  $("#content").append("<h1> great veggie burgers </h1>")
 
-    });
+  });

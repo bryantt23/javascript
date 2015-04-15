@@ -1,17 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Restaraunt</title>
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>jQuery UI Tabs functionality</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+         $(function() {
+            $( "#tabs-1" ).tabs();
+         });
+      </script>
+      <style>
+         #tabs-1{font-size: 14px;}
+         .ui-widget-header {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+   </head>
+   <body>
+     <!-- http://www.tutorialspoint.com/jqueryui/jqueryui_tabs.htm -->
+      <div id="tabs-1">
+         <ul>
+            <li><a href="#tabs-2">meat</a></li>
+            <li><a href="#tabs-3">veggie</a></li>
+            <li><a href="#tabs-4">liquor</a></li>
+         </ul>
+         <div id="tabs-2">
+            <p>steak</p>
+            <img src='steak.jpg' alt='steak' height="42" width="42">
+         </div>
+         <div id="tabs-3">
+            <p>veggie burger</p>
+         </div>
+         <div id="tabs-4">
+            <p>beer </p>
+         </div>
+      </div>
 
+<div id="content"></div>
 
-      <div class="container">
-
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 <script src="restaurant.js"></script>
-</body>
+
+   </body>
 </html>
